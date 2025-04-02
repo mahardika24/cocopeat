@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="/assets/LOGO ECO 1.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>COCOPEAT</title>
+  <style>
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.active {
+      transform: translateX(0);
+    }
+    .font-roboto {
+       font-family: "Roboto Slab", serif;
+     }
+     .nav-link.active::after {
+    width: 100%;
+}
+  
+  </style>
+</head>
+<body >
+
+  <section class="bg-[#C2EFD4] font-[Poppins] h-screen">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-0 py-6 px-6 md:px-24">
+      <div class="container mx-auto flex justify-between items-center">
+
+        <img src="/assets/LOGO ECO 1.png" alt="logo" class="w-10">
+
+        <div class="flex items-center space-x-4 md:space-x-8">
+          
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[#224F34]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+
+          <ul class="hidden md:flex space-x-6 font-medium text-sm text-[#224F34]">
+            <li><a href="/main.html" class="nav-link relative py-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#224F34] after:transition-all after:duration-300 hover:after:w-full">HOME</a></li>
+            <li><a href="/shop.html" class="nav-link relative py-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#224F34] after:transition-all after:duration-300 hover:after:w-full">SHOP</a></li>
+            <li><a href="/advantage.html" class="nav-link relative py-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#224F34] after:transition-all after:duration-300 hover:after:w-full">ADVANTAGE</a></li>
+            <li><a href="/howToMake.html" class="nav-link relative py-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#224F34] after:transition-all after:duration-300 hover:after:w-full">HOW TO MAKE</a></li>
+        </ul>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" width="26" height="26" viewBox="0 0 24 24">
+            <g fill="none" stroke="#224F34" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+              <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8"/>
+              <path d="M9 11V6a3 3 0 0 1 6 0v5"/>
+            </g>
+          </svg>
+
+          <button class="text-[#224F34] px-4 py-1 rounded-sm border-[1.5px] border-[#224F34] hover:bg-green-600/20">
+            LOGIN
+          </button>
+
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu z-20 fixed top-0 right-0 w-2/3 h-screen bg-white/0 backdrop-blur-lg shadow-lg p-6 flex flex-col items-end space-y-6">
+        <button id="close-menu" class="text-[#224F34] text-xl font-bold self-end">
+          ✕
+        </button>
+
+        <a href="/main.html" class="text-[#224F34] text-sm font-medium opacity-0 transform translate-x-5 transition-all duration-300 delay-100">HOME</a>
+        <a href="/shop.html" class="text-[#224F34] text-sm font-medium opacity-0 transform translate-x-5 transition-all duration-300 delay-150">SHOP</a>
+        <a href="/advantage.html" class="text-[#224F34] text-sm font-medium opacity-0 transform translate-x-5 transition-all duration-300 delay-200">ADVANTAGE</a>
+        <a href="/howToMake.html" class="text-[#224F34] text-sm font-medium opacity-0 transform translate-x-5 transition-all duration-300 delay-300">HOW TO MAKE</a>
+      </div>
+
+    </nav>
+    
+    <!-- desktop -->
+    <div class="items-center px-24 relative top-32 hidden md:flex flex-row">
+       <div class="flex flex-col items-start gap-5">
+        <h1 class="font-[Rufina] text-6xl font-bold text-[#224F34] opacity-0 translate-x-[-50px] transition-all duration-1000 delay-200 animate-slide">
+          Apa itu cocopeat & <br> cocofiber?</h1>
+          <p class="text-[#267D49] selection:bg-[#224F34] selection:text-white font-medium text-sm w-2/3 opacity-0 translate-x-[-50px] transition-all duration-1000 delay-200 animate-slide">
+            Cocopeat dan cocofiber adalah produk hasil olahan sabut kelapa yang digunakan dalam berbagai keperluan. Cocopeat adalah serbuk halus dari sabut kelapa yang memiliki daya serap air tinggi dan sering digunakan sebagai media tanam pengganti tanah. Sementara itu, cocofiber adalah serat kasar dari sabut kelapa yang biasa dimanfaatkan untuk pembuatan matras, sapu, jok kendaraan, hingga bahan kerajinan.</p>
+            <a href="/explore.html" class="bg-[#267D49] text-white py-3 px-6 rounded-sm shadow-xl opacity-0 transition-opacity duration-1000 delay-700 animate-fade">
+              EXPLORE NOW</a>
+        </div>
+      
+    <div class="relative w-full">
+      <img src="/assets/Mask group.png" class="opacity-0 translate-x-[50px] transition-all duration-1000 delay-200 animate-slide">
+    </div>
+    </div>
+
+    <!-- mobile -->
+    <div class="px-6 relative gap-5 top-44 flex md:hidden flex-col">
+      <div class="flex items-center flex-row">
+        <div class="flex flex-col items-start gap-5">
+          <h1 class="font-[Rufina] text-2xl font-bold text-[#224F34] opacity-0 translate-x-[-50px] transition-all duration-1000 delay-200 animate-slide">
+            Apa itu cocopeat & cocofiber?
+          </h1>
+          <a href="/explore.html" class="bg-[#267D49] text-white py-2 px-4 rounded-xs shadow-xl opacity-0 transition-opacity duration-1000 delay-500 animate-fade">
+            EXPLORE NOW
+          </a>
+        </div>
+    
+        <div class="relative w-1/2">
+          <img src="/assets/Mask group.png" class="opacity-0 transition-opacity duration-1000 delay-500 animate-fade">
+        </div>
+      </div>
+    
+      <p class="text-[#267D49] font-medium text-end text-sm w-full opacity-0 translate-x-[50px] transition-all duration-1000 delay-20000 animate-slide">
+        Cocopeat dan cocofiber adalah produk hasil olahan sabut kelapa yang digunakan dalam berbagai keperluan. Cocopeat adalah serbuk halus dari sabut kelapa yang memiliki daya serap air tinggi dan sering digunakan sebagai media tanam pengganti tanah. Sementara itu, cocofiber adalah serat kasar dari sabut kelapa yang biasa dimanfaatkan untuk pembuatan matras, sapu, jok kendaraan, hingga bahan kerajinan.
+      </p>
+    </div>
+</section>
+
+  <!-- cara pembuatan -->
+   <section class="h-auto flex gap-10 flex-col justify-center items-center">
+    <span class="text-center">
+        <h1 class="text-[#224F34] font-roboto text-xl font-medium mt-10">Cara Pembuatan Cocopeat & Cocofiber</h1>
+        <p class="text-[#224F34] text-xs font-base">Tahapan pembuatan Cocopeat & Cocofiber</p>
+    </span>
+    <div class="flex md:flex-row mx-20 gap-10 flex-col">
+        <img src="/assets/imageBanner.png" class="h-40 object-fit-cover">
+        <p class="text-[#267144] font-medium text-sm">Cocofiber adalah serat kelapa yang dihasilkan dari kulit atau sabut kelapa dan sering digunakan untuk berbagai keperluan seperti pembuatan kasur, jok kendaraan, tali, dan media tanam. Berikut adalah cara pembuatannya <br>
+            Bahan dan Alat <br>
+            • Sabut kelapa kering <br>
+            • Mesin pengurai sabut kelapa (decorticator) atau alat pemukul manual <br>
+            • Mesin pemisah serat dan gabus (trommel screen) <br>
+            • Mesin press (opsional, jika ingin bentuk bal) <br>
+            • Pisau atau gunting (jika dibutuhkan) <br>
+            • Air (jika diperlukan untuk pembasahan) <br>
+            Langkah Pembuatan Cocofiber <br>
+            1. Pemilihan Sabut Kelapa <br>
+              • Gunakan sabut kelapa yang sudah tua dan kering agar hasil serat lebih kuat dan berkualitas.
+            2. Perendaman (Opsional) <br>
+              • Jika sabut terlalu keras, rendam dalam air selama 2-3 hari agar lebih mudah diolah. <br>
+            3. Pengeringan <br>
+              • Jika sabut direndam, keringkan terlebih dahulu dengan cara dijemur di bawah sinar matahari. <br>
+            4. Penguraian Serat <br>
+              • Masukkan sabut kelapa ke dalam mesin pengurai sabut untuk memisahkan serat dari bagian gabusnya (cocopeat). <br>
+              • Jika dilakukan secara manual, pukul-pukul sabut kelapa hingga seratnya terlepas. <br>
+            5. Pemisahan Serat dan Cocopeat <br>
+              • Gunakan mesin trommel screen atau ayakan untuk memisahkan serat panjang (cocofiber) dari serbuk kelapa (cocopeat). <br>
+            6. Pembersihan dan Penyisihan <br>
+              • Serat yang dihasilkan bisa disisir atau disortir untuk mendapatkan ukuran serat yang seragam. <br>
+            7. Pengeringan Akhir <br>
+              • Jemur atau keringkan serat dengan mesin pengering agar kadar airnya rendah (sekitar 15%). <br>
+            8. Pengepakan <br>
+              • Jika ingin dijual dalam bentuk bal, cocofiber bisa dipress menggunakan mesin press. <br>  
+        </p>
+    </div>
+    
+    <div class="flex md:flex-row mx-20 gap-10 flex-col">
+        <img src="/assets/cocopeatimg.png" class="h-52 object-fit-cover">
+        <p class="text-[#267144] font-medium text-sm">Cocopeat adalah serbuk halus yang dihasilkan dari sabut kelapa. Cocopeat sering digunakan sebagai media tanam karena memiliki daya serap air yang tinggi dan ramah lingkungan. Berikut cara pembuatannya:<br>
+            Bahan dan Alat <br>
+            • Sabut kelapa kering <br>
+            • Mesin pengurai sabut kelapa (decorticator) atau alat pemukul manual <br>
+            • Mesin pemisah serat dan serbuk (trommel screen) <br>
+            • Ayakan atau saringan <br>
+            • Mesin press (opsional) <br>
+            • Air (jika diperlukan) <br>
+            Langkah Pembuatan Cocofiber <br>
+            1. Pemilihan Sabut Kelapa <br>
+              • Gunakan sabut kelapa yang sudah tua dan kering agar hasil cocopeat lebih berkualitas.
+            2. Perendaman (Opsional) <br>
+              • Jika sabut kelapa terlalu keras, bisa direndam selama 2-3 hari agar lebih mudah diolah. <br>
+            3. Pengeringan <br>
+              • Setelah direndam, jemur sabut kelapa hingga kering untuk memudahkan proses selanjutnya. <br>
+            4. Penguraian Sabut Kelapa <br>
+              • Masukkan sabut kelapa ke dalam mesin pengurai sabut untuk memisahkan serat panjang (cocofiber) dari serbuk halus (cocopeat). <br>
+              • Jika menggunakan metode manual, pukul-pukul sabut kelapa hingga serat terlepas dan menghasilkan serbuk halus. <br>
+            5. Pemisahan Cocopeat dari Serat <br>
+              • Gunakan mesin trommel screen atau ayakan untuk memisahkan serat panjang dari serbuk cocopeat. <br>
+              • Cocopeat yang halus akan terkumpul di bagian bawah. <br>
+            6. Penyaringan dan Pembersihan <br>
+              • Saring kembali menggunakan ayakan halus untuk mendapatkan cocopeat berkualitas tinggi tanpa kotoran atau serat kasar. <br>
+            7. Pengeringan Akhir <br>
+              • Cocopeat dijemur atau dikeringkan hingga kadar airnya sekitar 15% agar lebih tahan lama saat penyimpanan. <br>
+            8. Pengepakan <br>
+              • Jika ingin dijual dalam bentuk blok atau briket, cocopeat bisa dipress menggunakan mesin press hidrolik. <br>  
+              • Jika untuk keperluan langsung, bisa disimpan dalam karung atau plastik tanpa dipress. <br>  
+        </p>
+    </div>
+   </section>
+
+<!-- feedback -->
+
+  <section class="flex-col gap-10 md:h-screen items-center justify-center flex md:mt-0 mt-10 h-full md:pt-10 pt-0">
+    <h1 class="font-roboto text-[#224F34] font-medium text-xl md:text-2xl">Feedback Pelanggan</h1>
+
+    <div class="flex flex-col justify-center items-center md:flex-row gap-10 mx-20">
+      <div class="card bg-white shadow-md p-3 w-2/3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="#224F34" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10"/></svg>
+        <h1 class="text-[#224F34] font-roboto font-medium text-lg ">Andi Pratama</h1>
+        <p class="text-[#6F6F6F] font-medium text-xs">"Saya menggunakan cocopeat untuk media tanam hidroponik, dan hasilnya luar biasa! Tanaman lebih subur, akar lebih sehat, serta mampu menyimpan air dengan baik. Cocok sekali untuk tanaman saya di rumah."</p>
+      </div>
+
+      <div class="card bg-[#C2EFD4] shadow-md p-3 w-2/3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="#224F34" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10"/></svg>
+        <h1 class="text-[#224F34] font-roboto font-medium text-lg ">Siti Marlina</h1>
+        <p class="text-[#6F6F6F] font-medium text-xs">"Cocofiber sangat membantu dalam pembuatan pot gantung dan media anggrek saya. Seratnya kuat dan tidak mudah lapuk, membuat tanaman lebih tahan lama dan estetika pot lebih alami."</p>
+      </div>
+      
+      <div class="card bg-white shadow-md p-3 w-2/3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="#224F34" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10"/></svg>
+        <h1 class="text-[#224F34] font-roboto font-medium text-lg ">Budi Santoso</h1>
+        <p class="text-[#6F6F6F] font-medium text-xs">"Saya pakai kombinasi cocopeat dan cocofiber untuk kebun kecil saya, dan benar-benar terasa manfaatnya! Cocopeat membantu mempertahankan kelembaban tanah, sementara cocofiber bagus untuk drainase. Hasil panen lebih maksimal!"</p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="bg-[#224F34] h-auto p-20">
+    <div class="flex md:flex-row md:gap-0 gap-10 justify-between flex-col">
+      <div class="flex flex-col gap-2 items-start">
+        <img src="/assets/LOGO ECO 1.png" class="w-10">
+        <h1 class="font-roboto text-white font-base text-sm">Social Media</h1>
+        <span class="flex flex-row gap-3 items-center"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="border border-[#C2EFD4] rounded" width="20" height="20" viewBox="0 0 48 48"><path fill="none" stroke="#C2EFD4" stroke-linejoin="round" stroke-width="1.8" d="M36 12.6h-6.013c-1.086 0-1.967.88-1.967 1.967v6.9H36l-1.169 7.597h-6.81V43h-8.776V29.064H12v-7.597h7.151l.094-7.21l-.013-1.31A7.87 7.87 0 0 1 27.099 5H36z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48"><g fill="none"><path stroke="#C2EFD4" stroke-linejoin="round" stroke-width="1.8" d="M34 6H14a8 8 0 0 0-8 8v20a8 8 0 0 0 8 8h20a8 8 0 0 0 8-8V14a8 8 0 0 0-8-8Z"/><path stroke="#C2EFD4" stroke-linejoin="round" stroke-width="1.8" d="M24 32a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/><path fill="#C2EFD4" d="M35 15a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></g></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="#C2EFD4" stroke-linejoin="round" stroke-width="1.8" d="M5 35.762c1.929 1.067 15.891 9.115 25.82 2.912s9.38-16.89 9.38-21.788c.9-1.884 2.8-2.842 2.8-7.942q-2.799 2.585-5.565 1.76q-2.709-4.131-7.456-3.655c-4.746.477-6.482 5.133-5.971 11.158c-7.318 3.7-13.056-2.683-16.014-7.503c-.988 3.796-1.94 8.354 0 13.395q1.942 5.042 9.331 8.526Q9.835 36.685 5 35.762Z"/></svg>
+        </span>
+      </div>
+
+      <div class="flex flex-col gap-2 items-start">
+        <h1 class="font-roboto text-white font-base text-small">SHOP</h1>
+        <h3 class="text-[#C2EFD4] text-xs">Products</h3>
+        <h3 class="text-[#C2EFD4] text-xs">Overview</h3>
+        <h3 class="text-[#C2EFD4] text-xs">Pricing</h3>
+        <h3 class="text-[#C2EFD4] text-xs">Releases</h3>
+      </div>
+
+      <div class="flex flex-col gap-2 items-start">
+        <h1 class="font-roboto text-white font-base text-small">COMPANY</h1>
+        <h3 class="text-[#C2EFD4] text-xs">About us</h3>
+        <h3 class="text-[#C2EFD4] text-xs">Contact</h3>
+        <h3 class="text-[#C2EFD4] text-xs">News</h3>
+        <h3 class="text-[#C2EFD4] text-xs">Support</h3>
+      </div>
+
+      <div class="flex flex-col gap-2 items-start">
+        <h1 class="font-roboto text-white font-base text-small">STAY UP TO DATE</h1>
+        <div class="flex items-center">
+          <div class="flex w-full max-w-md">
+            <input type="email" placeholder="Enter your email"
+              class="flex-1 px-4 py-2 border border-[#A3F3BE] bg-[#224F34] rounded-l-sm text-white focus:outline-none  placeholder:text-white">
+            <button class="px-4 py-2 bg-green-300 text-[#224F34] font-semibold rounded-r-sm hover:bg-green-400">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        // Ambil URL saat ini tanpa query string
+        const currentPage = window.location.href.split(/[?#]/)[0]; 
+
+        // Jika URL saat ini mengandung href dari link, tambahkan kelas active
+        if (currentPage.includes(link.href)) {
+            link.classList.add("active");
+        }
+    });
+});
+    
+
+  // efek scroll blur navbar
+  window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("backdrop-blur-lg");
+  } else {
+    navbar.classList.remove("backdrop-blur-lg");
+  }
+});
+
+
+  // animation transisi main function
+  document.addEventListener("DOMContentLoaded", () => {
+    const slideElements = document.querySelectorAll(".animate-slide");
+    const fadeElements = document.querySelectorAll(".animate-fade");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("animate-slide")) {
+            entry.target.classList.remove("opacity-0", "translate-x-[-50px]");
+            entry.target.classList.add("opacity-100", "translate-x-0");
+          }
+          if (entry.target.classList.contains("animate-fade")) {
+            entry.target.classList.remove("opacity-0");
+            entry.target.classList.add("opacity-100");
+          }
+        }
+      });
+    }, { threshold: 0.1 });
+
+    slideElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => observer.observe(el));
+  });
+
+  // navbar function
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const menuItems = mobileMenu.querySelectorAll("a");
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      
+      menuItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("opacity-100", "translate-x-0");
+        }, index * 100);
+      });
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+
+      menuItems.forEach((item) => {
+        item.classList.remove("opacity-100", "translate-x-0");
+      });
+    });
+  </script>
+
+</html>
